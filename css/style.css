@@ -20,7 +20,7 @@ body{
 
 .counter{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     gap: 40px;
 }
 
@@ -50,4 +50,22 @@ button{
 
 p{
     font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .counter-container{
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .counter{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
 }
