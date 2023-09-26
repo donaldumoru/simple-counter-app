@@ -13,10 +13,12 @@ function increment() {
     countEl.textContent = count
 }
 
-// Function to decrease count by 1 on every click
+// Function to decrease count by 1 on every click and stop decreasing when it hits zero
 function decrement() {
-    count -= 1
-    countEl.innerText = count
+    if (count > 0) {
+        count -= 1;
+        countEl.textContent = count;
+    }
 }
 
 
