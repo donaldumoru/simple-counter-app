@@ -13,7 +13,7 @@ function increment() {
     countEl.textContent = count
 }
 
-// Function to decrease count by 1 on every click and stop decreasing when it hits zero
+// Function to decrease count by 1 on every click and stop decreasing when it hits 0
 function decrement() {
     if (count > 0) {
         count -= 1;
@@ -25,7 +25,6 @@ function reset() {
     countEl.textContent = 0
     count = 0
 }
-
 
 // Save entries function and resetting count back to 0 after every save
 function save() {
