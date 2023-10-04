@@ -21,6 +21,11 @@ function decrement() {
     }
 }
 
+function reset() {
+    countEl.textContent = 0
+    count = 0
+}
+
 
 // Save entries function and resetting count back to 0 after every save
 function save() {
