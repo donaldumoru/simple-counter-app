@@ -20,7 +20,7 @@ body{
 
 .counter{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     gap: 40px;
 }
 
@@ -30,6 +30,14 @@ button{
     width: 10rem;
     cursor: pointer;
     font-weight: bold;
+}
+
+
+#reset-btn{
+    font-size: 16px;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
 }
 
 #save-btn{
@@ -53,3 +61,19 @@ p{
 }
 
 
+@media (max-width: 768px) {
+    .counter-container{
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .counter{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
